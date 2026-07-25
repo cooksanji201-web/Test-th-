@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#020403" />
+  <title>Một lời nhắn dành riêng cho em</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="matrix"></canvas>
+  <canvas id="fx"></canvas>
+  <div class="vignette"></div>
+
+  <button id="musicBtn" class="music-btn" aria-label="Bật hoặc tắt nhạc">♫</button>
+
+  <main class="stage">
+    <section id="intro" class="scene active">
+      <div class="eyebrow">MỘT LỜI NHẮN DÀNH RIÊNG CHO EM</div>
+      <h1 id="introText" class="hero-text"></h1>
+      <button id="startBtn" class="primary-btn">Chạm để bắt đầu</button>
+    </section>
+
+    <section id="story" class="scene">
+      <div id="storyText" class="story-text"></div>
+    </section>
+
+    <section id="question" class="scene">
+      <div class="small-line">Vậy nên anh muốn hỏi em một điều...</div>
+      <h2>EM CÓ ĐỒNG Ý<br />LÀM NGƯỜI YÊU ANH KHÔNG?</h2>
+      <div class="heart-main">❤</div>
+      <div class="actions">
+        <button id="yesBtn" class="yes-btn">Đồng ý ❤</button>
+        <button id="maybeBtn" class="maybe-btn">Cho em suy nghĩ</button>
+      </div>
+      <div id="maybeNote" class="maybe-note"></div>
+    </section>
+
+    <section id="final" class="scene">
+      <div class="final-card">
+        <div class="final-heart">❤</div>
+        <h2>Anh biết mà.</h2>
+        <p>Anh sẽ cố gắng để quyết định này luôn là một điều thật đẹp.</p>
+        <p class="signature">Cảm ơn em vì đã xuất hiện ❤</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="tapSecret" class="secret">Bí mật nè… người tạo trang này đã thích em lâu hơn em nghĩ đó ❤</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
